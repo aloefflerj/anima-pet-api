@@ -1,0 +1,15 @@
+{
+  "name": "anima_pet",
+  "version": "1.0.0",
+  "description": "App para trabalho uniritter doação para pets",
+  "author": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "joi": "^17.5.0",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nome": "Dalila",
+        "raca": "Bulldog",
+        "idade": 15
+    },
+    {
+        "id": 2,
+        "nome": "Melanie",
+        "raca": "Pincher",
+        "idade": 5
+    },
+    {
+        "id": 3,
+        "nome": "Simba",
+        "raca": "Labrador",
+        "idade": 2
+    }
+]
