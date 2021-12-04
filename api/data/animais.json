@@ -16,5 +16,11 @@
         "nome": "Simba",
         "raca": "Labrador",
         "idade": 2
+    },
+    {
+        "id": 4,
+        "nome": "rex",
+        "raca": "beagle",
+        "idade": 5
     }
 ]

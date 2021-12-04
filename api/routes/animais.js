@@ -1,11 +1,14 @@
+var fs = require('fs')
+const Joi = require('joi');
 var express = require('express');
+
 var animaisData = require('../data/animais.json')
-const Joi = require('joi')
+var fakeDBHelper = require('../helpers/fakeJsonDBHelper')
 
 const schema = Joi.object({
     nome: Joi.string().min(3).required(),
     raca: Joi.string().min(3).required(),
-    idade: Joi.number().integer()
+    idade: Joi.number().integer().required()
 })
 
 module.exports = (function () {
@@ -37,6 +40,7 @@ module.exports = (function () {
         }
 
         animaisData.push(animal)
+        fakeDBHelper.writeToJson('animais', animaisData)
         res.send(animaisData)
     })
 
@@ -50,9 +54,10 @@ module.exports = (function () {
         // if (error) return res.status(400).send(error.details[0].message);
 
         animal.nome = req.body.nome ? req.body.nome : animal.nome
-        animal.raca = req.body.raca ? req.body.raca  : animal.raca
+        animal.raca = req.body.raca ? req.body.raca : animal.raca
         animal.idade = req.body.idade ? req.body.idade : animal.idade
 
+        fakeDBHelper.writeToJson('animais', animaisData)
         res.send(animal)
     })
 
@@ -65,6 +70,7 @@ module.exports = (function () {
             const index = animaisData.indexOf(animal)
             animaisData.splice(index, 1)
 
+            fakeDBHelper.writeToJson('animais', animaisData)
             res.send(animaisData)
 
     })
