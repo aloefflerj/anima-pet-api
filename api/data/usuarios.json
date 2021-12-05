@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "nome": "Jon Snow",
+        "passwd": "nightswatch",
+        "cpf": 15321321321,
+        "animais": [
+            5
+        ]
+    },
+    {
+        "id": 2,
+        "nome": "Arya",
+        "passwd": "valarmorghulis",
+        "cpf": 2121321321,
+        "animais": [
+            6
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "Sansa",
+        "passwd": "winterfell",
+        "cpf": 2244245321,
+        "animais": [
+            7
+        ]
+    },
+    {
+        "id": 4,
+        "nome": "usuario x",
+        "passwd": "$2b$10$A4PbnXsT5vmFEssITX28xut5xaTXzh0pKQY06kpID0GpI.Dh8Aa.S",
+        "cpf": "99999999999",
+        "animais": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": 5,
+        "nome": "novo nome de usuário",
+        "passwd": "$2b$10$h8h7PeGJwF9EOHEP0FLP4efP8vCQg5ZYtgD3IEXfR2/gVrzTdE4mW",
+        "cpf": "99999999999",
+        "animais": [
+            1,
+            2
+        ]
+    }
+]
