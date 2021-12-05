@@ -3,7 +3,7 @@
         "id": 1,
         "nome": "Jon Snow",
         "passwd": "nightswatch",
-        "cpf": 15321321321,
+        "cpf": "15321321321",
         "animais": [
             5
         ]
@@ -12,7 +12,7 @@
         "id": 2,
         "nome": "Arya",
         "passwd": "valarmorghulis",
-        "cpf": 2121321321,
+        "cpf": "2121321321",
         "animais": [
             6
         ]
@@ -21,7 +21,7 @@
         "id": 3,
         "nome": "Sansa",
         "passwd": "winterfell",
-        "cpf": 2244245321,
+        "cpf": "2244245321",
         "animais": [
             7
         ]
@@ -44,6 +44,116 @@
         "animais": [
             1,
             2
+        ]
+    },
+    {
+        "id": 6,
+        "nome": "usuario x",
+        "passwd": "$2b$10$rYHiu1AZsiEjT06fOFXL.epGIvesfk0odBlHYvHIXYeFuaSDQ20aO",
+        "cpf": "99999999999",
+        "animais": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": 7,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$wEK8YXRSD5snw.zKHmp6RurJCYwKwg4AwJRLUoYKTUZV/M..BMsKu",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 8,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$cf6w2.fg3.r7zJOJ8aOzeOHMEYqhtLDumINIb4PEpukk395yt3zBW",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 9,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$ZjRSqIk8qgwSPrHoARSIpO.qK81HkTohlj.B6WSMEjuO/O/xgq0Ae",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 10,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$Tbt.snp4U5GRX8ev9U/9f.oJlVvMwVWs.ZUMOS4FmQSc/J7BhvUFC",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 11,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$37fromA71uOJe9nWgZStLOpxvjHyX3P9V.kKxwsbjApEo6bI.h/eW",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 12,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$SEvyA2qYDrIiaorf2wIbSu/k19cRcfNcJnJkWFKMuDohZX/8OaYb2",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 13,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$Lm1C63XA7YOcP2FgmdMJgOI2uAEt7wSH6ZeROlVJGBw/YlA6WJbkK",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 14,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$PbnP4qY8SMPHTGnDFQ9M2.t9DlPRR31OvOr5TWKWT0LKGiRW.JC9u",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 15,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$Xc5/MubprJMpow1exQZl3O/YJiPNOYk2Uon8c3HcxvnPMG7uL/hIi",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 16,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$PzPn4NsNBU6tco95V5gZu.8oF.52R1b2GyR3r4f6ZjcE4aYzbPts.",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
         ]
     }
 ]
