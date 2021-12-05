@@ -33,8 +33,8 @@ Feature: Serviço de Usuários
 
         Examples:
             | id | response |
-            | 1  | { "id": 1, "nome": "Dalila", "raca": "Bulldog", "idade": 15 }    |
-            | 5  | { "id": 5, "nome": "Ghost", "raca": "Direwolf", "idade": 5 }     |
+            | 1  | { "id": 1, "nome": "Jon Snow", "passwd": "12345", "cpf": 15321321, "animais": [5, 4] } |
+            | 5  | { "id": 1, "nome": "Jon Snow", "passwd": "12345", "cpf": 15321321, "animais": [5, 4] } |
     
      Scenario Outline: Erro usuário não existe
         Given O usuário com id 999 não exista
@@ -59,3 +59,30 @@ Feature: Serviço de Usuários
         Examples:
             | request |
             | { "nome": "Tyrion", "passwd": "123!@#qweQWE", "cpf": "12345678910", "animais": [2,7] } |
+
+    ## DELETE USER
+
+    Scenario Outline: Deletar usuário
+        Given O usuário com id <id> exista
+        When Caso faça um request do tipo "DELETE" para "/usuarios/{id}"
+        When Recebo resposta de usuarios
+        Then A resposta deve retornar status 200
+        And A resposta deve ser um json no padrão <response>
+
+         Examples:
+            | id | response |
+            | 13  | [{ "id": 1, "nome": "Jon Snow", "passwd": "12345", "cpf": 15321321, "animais": [5, 4] }, { "id": 5, "nome": "Ghost", "raca": "Direwolf", "idade": 5 }] |
+
+    ## UPDATE USER
+
+    Scenario Outline: Atualizar usuário
+        Given O usuário com id <id> exista
+        Given Atualização de dados <request>
+        When Caso faça um request do tipo "PUT" para "/usuarios/{id}"
+        When Recebo resposta de usuarios
+        Then A resposta deve retornar status 200
+        And A resposta deve ser um json no padrão <response>
+
+         Examples:
+            | id | request | response |
+            | 16  | {"nome": "Brienne of Tharth Snow"} |  { "id": 1, "nome": "Jon Snow", "passwd": "12345", "cpf": 15321321, "animais": [5, 4] } |

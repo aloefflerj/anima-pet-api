@@ -41,6 +41,19 @@ Given('Caso faça um request do tipo POST para {string}', uri => {
     spec.post(`${baseUrl}${uri}`).withBody(JSON.parse(context['request']))
 })
 
+// DELETE/PUT
+Given('Caso faça um request do tipo {string} para {string}', (verb, uri) => {
+    context['verb'] = verb
+    if(verb === 'DELETE') 
+        spec.delete(`${baseUrl}${uri}`).withPathParams('id', context['id'])
+    else
+        spec.put(`${baseUrl}${uri}`).withPathParams('id', context['id']).withBody(JSON.parse(context['request']))
+})
+
+// PUT
+Given('Atualização de dados {}', request => {
+    context['request'] = request
+})
 
 // Common
 When('Recebo resposta de usuarios', async () => {
@@ -52,7 +65,7 @@ Then('A resposta deve retornar status {int}', async code => {
 })
 
 Then(/^A resposta deve ser um json no padrão(.*)$/, expectedResponse => {
-    if (context['id']) {
+    if (context['verb'] === 'PUT' || (context['id'] && context['verb'] !== 'DELETE')) {
         spec.response().should.have.jsonMatch({
             id: int(),
             nome: string(),

@@ -117,16 +117,6 @@
         ]
     },
     {
-        "id": 13,
-        "nome": "Tyrion",
-        "passwd": "$2b$10$Lm1C63XA7YOcP2FgmdMJgOI2uAEt7wSH6ZeROlVJGBw/YlA6WJbkK",
-        "cpf": "12345678910",
-        "animais": [
-            2,
-            7
-        ]
-    },
-    {
         "id": 14,
         "nome": "Tyrion",
         "passwd": "$2b$10$PbnP4qY8SMPHTGnDFQ9M2.t9DlPRR31OvOr5TWKWT0LKGiRW.JC9u",
@@ -148,8 +138,18 @@
     },
     {
         "id": 16,
-        "nome": "Tyrion",
+        "nome": "Brienne of Tharth Snow",
         "passwd": "$2b$10$PzPn4NsNBU6tco95V5gZu.8oF.52R1b2GyR3r4f6ZjcE4aYzbPts.",
+        "cpf": "12345678910",
+        "animais": [
+            2,
+            7
+        ]
+    },
+    {
+        "id": 17,
+        "nome": "Tyrion",
+        "passwd": "$2b$10$/S7W2XzQ/OudwEgliaoIPu.zvhVfWB0KbSJN0TI6FC9lKtbz6wpIa",
         "cpf": "12345678910",
         "animais": [
             2,
