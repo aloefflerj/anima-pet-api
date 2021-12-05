@@ -5,12 +5,17 @@
   "author": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "cucumber-js test"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
     "express": "^4.16.1",
     "joi": "^17.5.0",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1"
   }
 }
