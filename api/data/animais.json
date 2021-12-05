@@ -19,8 +19,26 @@
     },
     {
         "id": 4,
-        "nome": "rex",
+        "nome": "Rex",
         "raca": "beagle",
+        "idade": 5
+    },
+    {
+        "id": 5,
+        "nome": "Ghost",
+        "raca": "Direwolf",
+        "idade": 5
+    },
+    {
+        "id": 6,
+        "nome": "Nymeria",
+        "raca": "Direwolf",
+        "idade": 5
+    },
+    {
+        "id": 7,
+        "nome": "Lady",
+        "raca": "Direwolf",
         "idade": 5
     }
 ]

@@ -8,6 +8,7 @@
     "start": "nodemon server.js"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.16.1",
     "joi": "^17.5.0",
     "nodemon": "^2.0.15"
