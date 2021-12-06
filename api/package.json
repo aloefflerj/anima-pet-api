@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "cucumber-js test"
+    "test": "cucumber-js test --format progress-bar"
   },
   "dependencies": {
     "axios": "^0.24.0",

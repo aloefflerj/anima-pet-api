@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nome": "Dalila",
+        "raca": "Bulldog",
+        "idade": 15
+    },
+    {
+        "id": 2,
+        "nome": "Melanie",
+        "raca": "Pincher",
+        "idade": 5
+    },
+    {
+        "id": 3,
+        "nome": "Simba",
+        "raca": "Labrador",
+        "idade": 2
+    },
+    {
+        "id": 4,
+        "nome": "Rex",
+        "raca": "beagle",
+        "idade": 5
+    },
+    {
+        "id": 5,
+        "nome": "Ghost",
+        "raca": "Direwolf",
+        "idade": 5
+    },
+    {
+        "id": 6,
+        "nome": "Nymeria",
+        "raca": "Direwolf",
+        "idade": 5
+    },
+    {
+        "id": 7,
+        "nome": "Lady",
+        "raca": "Direwolf",
+        "idade": 5
+    }
+]

@@ -48,7 +48,7 @@ module.exports = (() => {
         }
 
         animaisData.push(animal)
-        fakeDBHelper.writeToJson('animais', animaisData)
+        // fakeDBHelper.writeToJson('animais', animaisData)
         res.json(animaisData)
     })
 
@@ -69,7 +69,7 @@ module.exports = (() => {
         animal.raca = req.body.raca ? req.body.raca : animal.raca
         animal.idade = req.body.idade ? req.body.idade : animal.idade
 
-        fakeDBHelper.writeToJson('animais', animaisData)
+        // fakeDBHelper.writeToJson('animais', animaisData)
         res.send(animal)
     })
 
@@ -86,7 +86,7 @@ module.exports = (() => {
         const index = animaisData.indexOf(animal)
         animaisData.splice(index, 1)
 
-        fakeDBHelper.writeToJson('animais', animaisData)
+        // fakeDBHelper.writeToJson('animais', animaisData)
         res.send(animaisData)
     })
 

@@ -27,9 +27,7 @@ module.exports = (() => {
     })
 
     usuarios.get('/:id', (req, res) => {
-        const usuario = usuariosData.find(
-            (u) => u.id === parseInt(req.params.id)
-        )
+        const usuario = usuariosData.find(u => u.id === parseInt(req.params.id))
 
         if (!usuario)
             return res.status(404).json({
@@ -58,14 +56,12 @@ module.exports = (() => {
         }
 
         usuariosData.push(usuario)
-        fakeDBHelper.writeToJson('usuarios', usuariosData)
+        // fakeDBHelper.writeToJson('usuarios', usuariosData)
         res.json(usuariosData)
     })
 
     usuarios.put('/:id', (req, res) => {
-        const usuario = usuariosData.find(
-            (u) => u.id === parseInt(req.params.id)
-        )
+        const usuario = usuariosData.find(u => u.id === parseInt(req.params.id))
 
         if (!usuario) {
             return res.status(404).json({
@@ -75,18 +71,18 @@ module.exports = (() => {
         }
 
         usuario.nome = req.body.nome ? req.body.nome : usuario.nome
-        usuario.passwd = req.body.passwd ? bcrypt.hashSync(req.body.passwd, 10) : usuario.passwd
+        usuario.passwd = req.body.passwd
+            ? bcrypt.hashSync(req.body.passwd, 10)
+            : usuario.passwd
         usuario.cpf = req.body.cpf ? req.body.cpf : usuario.cpf
         usuario.animais = req.body.animais ? req.body.animais : usuario.animais
 
-        fakeDBHelper.writeToJson('usuarios', usuariosData)
+        // fakeDBHelper.writeToJson('usuarios', usuariosData)
         res.json(usuario)
     })
 
     usuarios.delete('/:id', (req, res) => {
-        const usuario = usuariosData.find(
-            (u) => u.id === parseInt(req.params.id)
-        )
+        const usuario = usuariosData.find(u => u.id === parseInt(req.params.id))
 
         if (!usuario) {
             return res.status(404).json({
@@ -98,9 +94,8 @@ module.exports = (() => {
         const index = usuariosData.indexOf(usuario)
         usuariosData.splice(index, 1)
 
-        fakeDBHelper.writeToJson('usuarios', usuariosData)
+        // fakeDBHelper.writeToJson('usuarios', usuariosData)
         res.json(usuariosData)
-        
     })
 
     return usuarios

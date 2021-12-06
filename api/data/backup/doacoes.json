@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "doador": 1,
+        "donatario": 2,
+        "tipo": "ração"
+    },
+    {
+        "id": 2,
+        "doador": 3,
+        "donatario": 4,
+        "tipo": "remédio"
+    },
+    {
+        "id": 3,
+        "doador": 5,
+        "donatario": 6,
+        "tipo": "dinheiro"
+    }
+]
